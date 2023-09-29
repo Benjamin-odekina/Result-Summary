@@ -6,6 +6,14 @@ html {
     font-family: Hanken Grotesk, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .contentarea {
     max-width: 375px;
     margin: auto;
@@ -14,7 +22,6 @@ html {
 }
 @media screen and (min-width: 940px){
     .contentarea {
-        margin-top: 100px;
         display: flex;
         max-width: 740px;
         border-radius: 20px;
