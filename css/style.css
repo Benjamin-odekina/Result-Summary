@@ -1,0 +1,195 @@
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(https://fonts.google.com/specimen/Hanken+Grotesk);
+}
+html {
+    font-family: Hanken Grotesk, sans-serif;
+}
+
+.contentarea {
+    max-width: 375px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+}
+@media screen and (min-width: 940px){
+    .contentarea {
+        margin-top: 100px;
+        display: flex;
+        max-width: 740px;
+        border-radius: 20px;
+        box-shadow: -5px 2px 20px rgba(136, 136, 136, 0.37);
+    }
+    .head-container{
+        flex: 1;
+    }
+    .body-container{
+        flex: 1;
+    }
+  
+}
+.head-container {
+    color: hsl(0, 0%, 100%);
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%) ) ;
+    text-align: center;
+    padding: 25px;
+    border-radius: 0 0 30px 30px;
+}
+@media screen and (min-width: 940px){
+    .head-container{ 
+        border-radius:20px;
+        padding: 40px;
+    }
+}
+.head-container p {
+    font-weight: normal;
+    color: hsl(0, 0%, 100%, .7);
+    font-size: 15px;
+}
+.Result {
+    color: hsl(0, 0%, 100%, .7);
+    font-weight: bold;
+    font-size: small;
+
+}
+.circle {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    text-align: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0) );
+    border-radius: 50%;
+}
+@media screen and (min-width: 940px) {
+    .circle{
+        width: 150px;
+        height: 150px;
+    }
+    .Result {
+        font-weight: bold;
+        font-size: large;
+    } 
+}
+
+.circle-content {
+    margin: auto;
+}
+.circle-content:nth-child(1) {
+    font-weight: bolder;
+    font-size: 35px;
+    margin-bottom: 0px;
+}
+.circle-content:nth-child(2) {
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.7);
+    margin-top: 5px;
+}
+@media screen and (min-width: 940px) {
+    .circle-content:nth-child(1) {
+        font-size: 65px;
+    }
+    .circle-content:nth-child(2) {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    #note {
+        font-size: 23px;
+        transform: scale(80%);
+        padding: 0;
+        margin: 0;
+    }
+}
+.great {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.body-container {
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 940px){
+    .body-container{
+        padding: 20px 20px;
+    }
+    .great {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+}
+}
+.body-container p {
+    font-size: 15px;
+    font-weight: 600;
+}
+.box {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.box1 {
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(0, 100%, 67%, 0.075);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.box1-text:nth-child(2) { font-weight: bold; margin-left: -30%;}
+.box1-text:nth-child(3) { color: #000;}
+
+.box2 {
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(39, 100%, 56%, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.box2-text:nth-child(2) { font-weight: bold; margin-left: -30%;}
+.box2-text:nth-child(3) { color: #000;}
+
+.box3 {
+    color: hsl(166, 100%, 37%);
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(166, 100%, 37%, 0.075);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.box3-text:nth-child(2) { font-weight: bold; margin-left: -30%;}
+.box3-text:nth-child(3) { color: #000;}
+
+.box4 {
+    color: hsl(234, 85%, 45%);
+    display: flex;
+    justify-content: space-between;
+    background-color: hsla(234, 85%, 45%, 0.075);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.box4-text:nth-child(2) { font-weight: bold; margin-left: -30%;}
+.box4-text:nth-child(3) { color: #000;}
+
+.click {
+    background-color: rgb(46, 46, 72);
+    color: hsl(0, 0%, 100%);
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 13px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.click:hover {
+    background-color: rgb(13, 13, 54);
+    transition: 0.3s ease-in;
+}
